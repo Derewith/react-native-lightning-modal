@@ -3,11 +3,10 @@ import React, {
   useCallback,
   useImperativeHandle,
 } from 'react';
-import { StyleSheet, View, ViewStyle } from 'react-native';
+import { StyleSheet, View, ViewStyle, Pressable } from 'react-native';
 import {
   PanGestureHandler,
   PanGestureHandlerGestureEvent,
-  TouchableWithoutFeedback,
 } from 'react-native-gesture-handler';
 import Animated, {
   Easing,
@@ -19,9 +18,7 @@ import Animated, {
   withSpring,
   withTiming,
 } from 'react-native-reanimated';
-const ReanimatedBackdrop = Animated.createAnimatedComponent(
-  TouchableWithoutFeedback
-);
+const ReanimatedBackdrop = Animated.createAnimatedComponent(Pressable);
 
 import { screen } from '../utils';
 
