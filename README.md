@@ -1,4 +1,4 @@
-# react-native-lightning-modal
+# @develondigital/react-native-lightning-modal
 
 ![2021-08-09 17-32-38](https://user-images.githubusercontent.com/23079646/128723844-c7317cf3-6d28-4d60-a6ac-5c1c108a4a50.gif)
 
@@ -20,7 +20,7 @@ First make sure that you have installed all the prerequisites.
 
 ```sh
 
-npm install react-native-lightning-modal
+npm i @develondigital/react-native-lightning-modal
 
 ```
 
@@ -28,7 +28,7 @@ npm install react-native-lightning-modal
 
 ```sh
 
-yarn add react-native-lightning-modal
+yarn add @develondigital/react-native-lightning-modal
 
 ```
 
@@ -43,7 +43,7 @@ import React from 'react';
 
 import { View } from 'react-native';
 
-import { useBottomModal, BottomModal } from 'react-native-lightning-modal';
+import { useBottomModal, BottomModal } from '@develondigital/react-native-lightning-modal';
 
 export default function App() {
   const { dismiss, show, modalProps } = useBottomModal();
@@ -77,7 +77,7 @@ import React from 'react';
 
 import { View } from 'react-native';
 
-import { BottomModal, BottomModalRef } from 'react-native-lightning-modal';
+import { BottomModal, BottomModalRef } from '@develondigital/react-native-lightning-modal';
 
 export default function App() {
   const bottomModalRef = React.useRef < BottomModalRef > null;
